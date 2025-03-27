@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="hero-section">
+            <nav>
+                <h2>Lorem Ipsum</h2>
+                <button class="login">
+                    <ion-icon name="person" class="person"></ion-icon>
+                    <p>Log in</p>
+                </button>
+            </nav>
+        </div>
+
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <ion-icon class="close" name="close"></ion-icon>
+                <img src="modal-banner.png" alt="modal-banner">
+            </div>
+        </div>
+
+        <div class="login-overlay">
+            <div class="login-outer-box">
+                <div class="chibi-container">
+                    <img class="chibi-img default-img active" src="./char-1.webp" alt="chibi">
+                    <img class="chibi-img error-img" src="./char-2.webp" alt="chibi">
+                </div>
+                <div class="login-inner-box">
+                    <div class="close-div">
+                        <ion-icon class="close-login" name="close"></ion-icon>
+                    </div>
+
+                    <div class="fade-animate">
+                        <h2>Account Log In</h2>
+
+                        <form autocomplete="off" action="/" method="post">
+                            <div class="input">
+                                <input class="username-input" type="text" name="username" placeholder="Username/Email">
+                                <span class="error" id="username-error"></span>
+                            </div>
+                            
+                            <div class="input">
+                                <input class="password-input" type="password" name="password" placeholder="Password">
+                                <span class="error" id="password-error"></span>
+                                
+                            </div>
+                            <button class="submit-button" type="submit">Log In</button>
+                        </form>
+                        <div class="cta-help">
+                            <a href="#">Having problems?</a>
+                            <a href="#">Register now</a>
+                        </div>
+
+                        <div class="label-login-method">
+                            More Login Methods
+                        </div>
+
+                        <div class="login-method">
+                            <a href="#" class="link-sign-in">
+                                <img src="./google.svg" alt="sign in">
+                            </a>
+                            <a href="#" class="link-sign-in apple-bg">
+                                <img src="./apple.svg" alt="sign in">
+                            </a>
+                            <a href="#" class="link-sign-in fb-bg">
+                                <img src="./facebook.svg" alt="sign in">
+                            </a>
+                            <a href="#" class="link-sign-in tw-bg">
+                                <img src="./twitter.svg" alt="sign in">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

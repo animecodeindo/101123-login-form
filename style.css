@@ -25,7 +25,7 @@
     max-width: 100%;
     height: 100%;
     background: url("background-2.jpg") no-repeat center;
-
+    background-size: cover;
 }
 
 .main-container .hero-section nav{
